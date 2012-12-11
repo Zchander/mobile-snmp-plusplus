@@ -118,7 +118,7 @@ using namespace Snmp_pp;
               withCommunity:(NSString *)community
                       retry:(uint)retries
                     timeout:(uint)timeout
-                      error:(NSNumber * __autoreleasing*)error
+                      error:(NSError * __autoreleasing*)error
 {
     int status;
     
@@ -168,7 +168,9 @@ using namespace Snmp_pp;
     // It the address is invalid, we return a 'nil' for the array AND the *error ival
     // will contain the error code
     if ( !udpAddr.valid()) {
-        *error = [NSNumber numberWithInteger:ERR_INVALID_DESTINATION];
+        
+        *error = [self constructError:ERR_INVALID_DESTINATION];
+        
 #ifdef DEBUG
         NSLog(@"ERROR SNMPController (discoverAgents:onBroadcast:snmpVersion:remotePort:withCommunity:retry:timeout:error:)");
         NSLog(@"ERROR SNMP++ Invalid host address or IP: %@", onBroadcast);
@@ -186,7 +188,7 @@ using namespace Snmp_pp;
         NSLog(@"ERROR SNMP++ Could not create session: %s", snmp.error_msg(status));
         NSLog(@"ERROR ====================");
 #endif
-        *error = [NSNumber numberWithInteger:ERR_NO_SNMP_SESSION];
+        *error = [self constructError:ERR_NO_SNMP_SESSION];
         return nil;
     }
     // Next we are going to issue the broadcast, blocked mode
@@ -270,7 +272,7 @@ using namespace Snmp_pp;
            withCommunity:(NSString *)community
                    retry:(uint)retries
                  timeout:(uint)timeout
-                   error:(NSNumber * __autoreleasing*)error
+                   error:(NSError * __autoreleasing*)error
 {
     int status;
     
@@ -313,7 +315,7 @@ using namespace Snmp_pp;
     // Check if it is a valid address, if we got an invalid address
     // we return a 'nil' dictionary and an error code
     if ( !udpAddress.valid() ) {
-        *error = [NSNumber numberWithInteger:ERR_INVALID_DESTINATION];
+        *error = [self constructError:ERR_INVALID_DESTINATION];
 #ifdef DEBUG
         NSLog(@"ERROR SNMPController (getOid:hostAddress:oid:snmpVersion:remotePort:withCommunity:retry:timeout:error:)");
         NSLog(@"ERROR SNMP++ Invalid host address or IP: %@", hostAddress);
@@ -342,7 +344,7 @@ using namespace Snmp_pp;
         NSLog(@"ERROR SNMP++ Could not create session: %s", snmp.error_msg(status));
         NSLog(@"ERROR ====================");
 #endif
-        *error = [NSNumber numberWithInteger:ERR_NO_SNMP_SESSION];
+        *error = [self constructError:ERR_NO_SNMP_SESSION];
         return nil;
     }
     
@@ -416,7 +418,7 @@ using namespace Snmp_pp;
                     retry:(uint)retries
                   timeout:(uint)timeout
           walkSubTreeOnly:(BOOL)subTree
-                    error:(NSNumber * __autoreleasing*)error
+                    error:(NSError * __autoreleasing*)error
 {
     int requests = 0;                           // Track the number of requests
     int objects = 0;                            // Track the number of objects
@@ -463,7 +465,7 @@ using namespace Snmp_pp;
     // Check if it is a valid address, if we got an invalid address
     // we return a 'nil' dictionary and an error code
     if ( !udpAddress.valid() ) {
-        *error = [NSNumber numberWithInteger:ERR_INVALID_DESTINATION];
+        *error = [self constructError:ERR_INVALID_DESTINATION];
 #ifdef DEBUG
         NSLog(@"ERROR SNMPController (walkOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:walkSubTreeOnly:error:)");
         NSLog(@"ERROR SNMP++ Invalid host address or IP: %@", hostAddress);
@@ -491,7 +493,7 @@ using namespace Snmp_pp;
         NSLog(@"ERROR SNMP++ Could not create session: %s", snmp.error_msg(status));
         NSLog(@"ERROR ====================");
 #endif
-        *error = [NSNumber numberWithInteger:ERR_NO_SNMP_SESSION];
+        *error = [self constructError:ERR_NO_SNMP_SESSION];
         return nil;
     }
     
@@ -581,6 +583,201 @@ using namespace Snmp_pp;
     return ( resultsDict != nil ) ? [NSDictionary dictionaryWithDictionary:resultsDict] : nil;
 }
 
+/*
+ * To be re-implemented/corrected
+ *
+ 
+- (NSDictionary *)getBulk:(NSArray *)oids
+             address:(NSString *)hostAddress
+         snmpVersion:(uint)version
+          remotePort:(NSNumber *)aPort
+       withCommunity:(NSString *)community
+               retry:(uint)retries
+             timeout:(uint)timeout
+        nonRepeaters:(uint)nonRepeaters
+       maxRepetition:(uint)maxRepetitions
+               error:(NSError *__autoreleasing *)error
+{
+    int status;
+    __block int errorCode = 0;
+    
+    uint l_retries;
+    uint l_timeout;
+    uint l_repeaters;
+    uint l_repetitions;
+    NSNumber *localPort;
+    
+    snmp_version snmpVersion = version1;
+    OctetStr snmpCommunity([community UTF8String]);
+    
+    if ( aPort == nil || aPort == 0 ) {
+        localPort = [NSNumber numberWithInt:161];
+    } else localPort = aPort;
+    
+    if ( retries > 100 ) {
+        l_retries = 100;
+    } else l_retries = retries;
+    
+    if ( timeout < 100 ) {
+        l_timeout = 100;
+    } else if ( timeout > 500 ) {
+        l_timeout = 500;
+    } else l_timeout = timeout;
+    
+    if ( nonRepeaters > 10 ) {
+        l_repeaters = 0;
+    } else l_repeaters = nonRepeaters;
+    
+    if ( maxRepetitions > 50 ) {
+        l_repetitions = 50;
+    } else l_repetitions = maxRepetitions;
+    
+    switch ( version ) {
+        case 1:
+            snmpVersion = version1;
+            break;
+        case 2:
+            snmpVersion = version2c;
+            break;
+        default:
+            snmpVersion = version1;
+            break;
+    }
+    
+    // Generate a SNMP++ generic address
+    UdpAddress udpAddress([hostAddress UTF8String]);
+    
+    // Check if it is a valid address, if we got an invalid address
+    // we return a 'nil' dictionary and an error code
+    if ( !udpAddress.valid() ) {
+        *error = [self constructError:ERR_INVALID_DESTINATION];
+#ifdef DEBUG
+        NSLog(@"ERROR SNMPController (getBulk:hostAddress:snmpVersion:remotePort:withCommunity:retry:timeout:nonRepeaters:maxRepetitions:error:)");
+        NSLog(@"ERROR SNMP++ Invalid host address or IP: %@", hostAddress);
+        NSLog(@"ERROR ====================");
+#endif
+        return nil;
+    }
+
+    // Create a Pdu and a Vb object
+    __block Pdu pdu;
+    __block Vb vb;
+    
+    // Loop through the array with OIDs and check them
+    if ( (oids.count == 0) || oids == nil ) {
+        // Seems we got an empty or no array, use the standard sysDescr OID
+        Oid l_oid("1.3.6.1.2.1.1.1");
+        vb.set_oid(l_oid);
+        pdu += vb;
+    } else {
+        [oids enumerateObjectsUsingBlock:^(id oid, NSUInteger idx, BOOL *stop){
+            
+#ifdef DEBUG
+            NSLog(@"DEBUG SNMPController (getBulk:hostAddress:snmpVersion:remotePort:withCommunity:retry:timeout:nonRepeaters:maxRepetitions:error:)");
+            NSLog(@"DEBUG We are querying: %@ (index %d)", oid, idx);
+            NSLog(@"DEBUG ====================");
+#endif
+            
+            if ( oid == nil || ![oid isKindOfClass:[NSString class]] ) {
+                // Seems we got an empty oid or the object has the wrong class,
+                // return a 'nil' dictionary and an error code
+                errorCode = ERR_INVALID_OID_OBJECT;
+                
+                // Force a stop!
+                *stop =YES;
+                
+            }
+            
+#ifdef DEBUG
+            
+#endif
+            Oid l_oid([oid UTF8String]);
+            
+            if ( !l_oid.valid() ) {
+                errorCode = ERR_INVALID_OID;
+                
+                // Force a stop!
+                *stop = YES;
+                
+            } else {
+                vb.set_oid(l_oid);
+                pdu += vb;
+                
+                // Might not be required, but to be sure...
+                errorCode = 0;
+            }
+        }];
+    }
+    
+    if ( errorCode != 0 ) {
+        // Seems some error occured, return 'nil' and the error code
+        *error = [NSNumber numberWithInteger:errorCode];
+        return nil;
+    }
+
+    // So far, so good, create the SNMP session
+    Snmp snmp(status, 0, (udpAddress.get_ip_version() == Address::version_ipv6));
+    
+    if ( status != SNMP_CLASS_SUCCESS ) {
+#ifdef DEBUG
+        NSLog(@"ERROR SNMPController (getBulk:hostAddress:snmpVersion:remotePort:withCommunity:retry:timeout:nonRepeaters:maxRepetitions:error:)");
+        NSLog(@"ERROR SNMP++ Could not create session: %s", snmp.error_msg(status));
+        NSLog(@"ERROR ====================");
+#endif
+        *error = [self constructError:ERR_NO_SNMP_SESSION];
+        return nil;
+    }
+    
+    // Set the port
+    udpAddress.set_port([localPort integerValue]);
+    CTarget ctarget(udpAddress);                // Make a target using the address
+    
+    ctarget.set_version(snmpVersion);           // Set the SNMP version
+    ctarget.set_retry(l_retries);               // Set the number of retries
+    ctarget.set_timeout(l_timeout);             // Set the timeout for the request
+    ctarget.set_readcommunity(snmpCommunity);   // Set the read community name
+    
+    // Issue the request, in blocked mode
+#ifdef DEBUG
+    NSLog(@"ERROR SNMPController (getBulk:hostAddress:snmpVersion:remotePort:withCommunity:retry:timeout:nonRepeaters:maxRepetitions:error:)");
+    NSLog(@"DEBUG SNMP++ GET to %@ (oid: %@) with version %d on Port: %d using community %@ with retries %d and timeout %d", hostAddress, oids, version, [aPort integerValue], community, retries, timeout);
+    NSLog(@"DEBUG SNMP++ What is the community we are sending.... %s", snmpCommunity.get_printable());
+    NSLog(@"DEBUG ====================");
+#endif
+    
+    SnmpTarget *target;
+    target = &ctarget;
+
+    status = snmp.get_bulk(pdu, *target, l_repeaters, l_repetitions);
+    
+    NSMutableDictionary *resultsDict = [[NSMutableDictionary alloc] init];
+    
+    if ( status == SNMP_CLASS_SUCCESS ) {
+        for ( int z = 0; z < pdu.get_vb_count(); z++ ) {
+            pdu.get_vb(vb, z);
+            
+            if ( vb.get_syntax() != sNMP_SYNTAX_ENDOFMIBVIEW ) {
+#ifdef DEBUG
+                NSLog(@"ERROR SNMPController (getBulk:hostAddress:snmpVersion:remotePort:withCommunity:retry:timeout:nonRepeaters:maxRepetitions:error:)");
+                NSLog(@"DEBUG SNMP++ -- Oid: %s", vb.get_printable_oid());
+                NSLog(@"DEBUG SNMP++ -- Value: %s", vb.get_printable_value());
+#endif
+                // Add the results to the resultDict
+                [resultsDict setObject:[NSString stringWithUTF8String:vb.get_printable_value()] forKey:[NSString stringWithUTF8String:vb.get_printable_oid()]];
+            }
+
+        }
+    } else {
+        NSLog(@"ERROR SNMP++ GET Error: %s (%d)", snmp.error_msg(status), status);
+        *error = [self constructError:ERR_NO_SNMP_GET];
+        return nil;
+    }
+    
+    return ( resultsDict != nil ) ? [NSDictionary dictionaryWithDictionary:resultsDict] : nil;
+}
+ *
+ */
+
 #pragma mark - Private Methods
 #pragma mark -- (Sub)System initialization
 - (void)socketStartUp
@@ -601,6 +798,58 @@ using namespace Snmp_pp;
     NSLog(@"DEBUG ====================");
 #endif
     Snmp::socket_cleanup();
+}
+
+#pragma mark - Private methods
+#pragma mark -- Error handling
+- (NSError *)constructError:(int)errorCode {
+    
+    NSMutableDictionary *errorDetail = [NSMutableDictionary dictionary];
+    
+    switch ( errorCode ) {
+            
+        case ERR_INVALID_DESTINATION:
+            
+            [errorDetail setValue:NSLocalizedString(@"Invalid host address", @"Error Detail: Invalid address") forKey:NSLocalizedDescriptionKey];
+            return [NSError errorWithDomain:@"nl.xjmaas" code:ERR_INVALID_DESTINATION userInfo:errorDetail];
+            break;
+            
+        case ERR_INVALID_OID:
+            
+            [errorDetail setValue:NSLocalizedString(@"Invalid OID", @"Error Detail: Invalid OID") forKey:NSLocalizedDescriptionKey];
+            return [NSError errorWithDomain:@"nl.xjmaas" code:ERR_INVALID_OID userInfo:errorDetail];
+            break;
+            
+        case ERR_INVALID_OID_OBJECT:
+            
+            [errorDetail setValue:NSLocalizedString(@"Invalid OID object", @"Error Detail: Invalid OID object") forKey:NSLocalizedDescriptionKey];
+            return [NSError errorWithDomain:@"nl.xjmaas" code:ERR_INVALID_OID_OBJECT userInfo:errorDetail];
+            break;
+            
+        case ERR_INVALID_TARGET:
+            
+            [errorDetail setValue:NSLocalizedString(@"Invalid target", @"Error Detail: Invalid target") forKey:NSLocalizedDescriptionKey];
+            return [NSError errorWithDomain:@"nl.xjmaas" code:ERR_INVALID_TARGET userInfo:errorDetail];
+            break;
+            
+        case ERR_NO_SNMP_GET:
+            
+            [errorDetail setValue:NSLocalizedString(@"Could not perform GET", @"Error Detail: No GET") forKey:NSLocalizedDescriptionKey];
+            return [NSError errorWithDomain:@"nl.xjmaas" code:ERR_NO_SNMP_GET userInfo:errorDetail];
+            break;
+            
+        case ERR_NO_SNMP_SESSION:
+            
+            [errorDetail setValue:NSLocalizedString(@"Could not establish session", @"Error Detail: No session") forKey:NSLocalizedDescriptionKey];
+            return [NSError errorWithDomain:@"nl.xjmaas" code:ERR_NO_SNMP_SESSION userInfo:errorDetail];
+            break;
+            
+        default:
+            return nil;
+            break;
+    }
+    
+    return nil;
 }
 
 @end

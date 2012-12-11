@@ -114,6 +114,8 @@
 #define ERR_INVALID_TARGET      20
 #define ERR_NO_SNMP_SESSION     30
 #define ERR_NO_SNMP_GET         40
+#define ERR_INVALID_OID         90
+#define ERR_INVALID_OID_OBJECT  95
 
 
 #endif

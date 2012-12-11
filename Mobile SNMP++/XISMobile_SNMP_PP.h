@@ -81,8 +81,8 @@
  
  The project is based on SNMP++v3.2.25 from Jochen Katz, Frank Fock
  
- @warning 
- **LICENSE**
+ @bug **LICENSE**
+ 
  Mobile SNMP++
  
  Created by Xander Maas on 22-08-12.
@@ -164,13 +164,15 @@
  
  @param onBroadcast The broadcast address of the network you wish to scan
  @param version The SNMP version you wish to use 
+ 
  1. SNMP version 1
  2. SNMP Version 2c
+ 
  @param aPort The UDP port used for the SNMP agent(s), defaults to 161
  @param community The readonly community string to identify yourself to the agent(s)
- @param retries The number of retries before returning the results
- @param timeout The timeout in msec
- @param error Is an autoreleased NSNumber containing the error code
+ @param retries The number of retries before returning the results. Maximum value is 100
+ @param timeout The timeout in msec. Valid values are between 100 and 500 msec
+ @param error Is an autoreleased NSError
  @return Returns an array containing the IP addresses of discovered SNMP agents
  
  @see [Mobile SNMP++ error codes]
@@ -182,20 +184,22 @@
               withCommunity:(NSString *)community
                       retry:(uint)retries
                     timeout:(uint)timeout
-                      error:(NSNumber * __autoreleasing*)error;
+                      error:(NSError * __autoreleasing*)error;
 
 /** Converted command: snmpGet - Returns the value corresponding to the requested OID
  
  @param oid The OID you wish to request
  @param hostAddress The address of the host you wish to query, might be an IPv4 address or a hostname
  @param version The SNMP version you wish to use
+ 
  1. SNMP version 1
  2. SNMP Version 2c
+ 
  @param aPort The UDP port used for the SNMP agent(s), defaults to 161
  @param community The readonly community string to identify yourself to the agent(s)
- @param retries The number of retries before returning the results
- @param timeout The timeout in msec
- @param error Is an autoreleased NSNumber containing the error code
+ @param retries The number of retries before returning the results. Maximum value is 100
+ @param timeout The timeout in msec. Valid values are between 100 and 500 msec
+ @param error Is an autoreleased NSError
  @return Returns a NSDictionary containing the OID and the corresponding value as NSString
  
  @see [Mobile SNMP++ error codes]
@@ -208,21 +212,23 @@
            withCommunity:(NSString *)community
                    retry:(uint)retries
                  timeout:(uint)timeout
-                   error:(NSNumber * __autoreleasing*)error;
+                   error:(NSError * __autoreleasing*)error;
 
 /** Converted command: snmpGet - Returns the value corresponding to the requested OID
  
  @param oid The top level OID you wish to start the request
  @param hostAddress The address of the host you wish to query, might be an IPv4 address or a hostname
  @param version The SNMP version you wish to use
+ 
  1. SNMP version 1
  2. SNMP Version 2c
+ 
  @param aPort The UDP port used for the SNMP agent(s), defaults to 161
  @param community The readonly community string to identify yourself to the agent(s)
- @param retries The number of retries before returning the results
- @param timeout The timeout in msec
+ @param retries The number of retries before returning the results. Maximum value is 100
+ @param timeout The timeout in msec. Valid values are between 100 and 500 msec
  @param subTree A boolean which indicates wether you wish to walk only the subtree, or the whole tree. `YES` means you wish to walk only the subtree. `NO` means you want to read the whole SNMP tree.
- @param error Is an autoreleased NSNumber containing the error code
+ @param error Is an autoreleased NSError
  @return Returns a NSDictionary containing the OIDs and the corresponding values as NSString
  
  @see [Mobile SNMP++ error codes]
@@ -236,6 +242,21 @@
                     retry:(uint)retries
                   timeout:(uint)timeout
           walkSubTreeOnly:(BOOL)subTree
-                    error:(NSNumber * __autoreleasing*)error;
+                    error:(NSError * __autoreleasing*)error;
+
+/** Converted command: snmpBulk - Returns the values corresponding to an array of OIDs
+ 
+ */
+/*- (NSDictionary *)getBulk:(NSArray *)oids
+             address:(NSString *)hostAddress
+         snmpVersion:(uint)version
+          remotePort:(NSNumber *)aPort
+       withCommunity:(NSString *)community
+               retry:(uint)retries
+              timeout:(uint)timeout
+        nonRepeaters:(uint)nonRepeaters
+       maxRepetition:(uint)maxRepetitions
+               error:(NSError *__autoreleasing *)error;
+*/
 
 @end
