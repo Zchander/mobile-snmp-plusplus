@@ -262,6 +262,11 @@ using namespace Snmp_pp;
 #endif
     
     NSArray *results = [[NSArray alloc] initWithArray:discoveryArray];
+    
+    // Make sure error is nil!
+    
+    *error = nil;
+    
     return results;
 }
 
@@ -405,6 +410,10 @@ using namespace Snmp_pp;
         NSLog(@"DEBUG ====================");
 #endif
     }
+    
+    // Make sure error is nil!
+    
+    *error = nil;
     
     return ( resultsDict != nil ) ? [NSDictionary dictionaryWithDictionary:resultsDict] : nil;
     
@@ -578,6 +587,10 @@ using namespace Snmp_pp;
         NSLog(@"DEBUG SNMP++ Total # of objects: %d", objects);
         NSLog(@"DEBUG ====================");
     }
+    
+    // Make sure error is nil!
+    
+    *error = nil;
     
 #warning IS THIS CORRECT??
     return ( resultsDict != nil ) ? [NSDictionary dictionaryWithDictionary:resultsDict] : nil;
