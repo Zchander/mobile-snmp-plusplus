@@ -1,0 +1,54 @@
+  ############################################################################
+  ## 
+  ##  Makefile.linux  
+  ##
+  ##  SNMP++v3.2.25
+  ##  -----------------------------------------------
+  ##  Copyright (c) 2001-2010 Jochen Katz, Frank Fock
+  ##
+  ##  This software is based on SNMP++2.6 from Hewlett Packard:
+  ##  
+  ##    Copyright (c) 1996
+  ##    Hewlett-Packard Company
+  ##  
+  ##  ATTENTION: USE OF THIS SOFTWARE IS SUBJECT TO THE FOLLOWING TERMS.
+  ##  Permission to use, copy, modify, distribute andor sell this software 
+  ##  andor its documentation is hereby granted without fee. User agrees 
+  ##  to display the above copyright notice and this license notice in all 
+  ##  copies of the software and any documentation of the software. User 
+  ##  agrees to assume all liability for the use of the software; 
+  ##  Hewlett-Packard and Jochen Katz make no representations about the 
+  ##  suitability of this software for any purpose. It is provided 
+  ##  "AS-IS" without warranty of any kind, either express or implied. User 
+  ##  hereby grants a royalty-free license to any and all derivatives based
+  ##  upon this software code base. 
+  ##  
+  ##  Stuttgart, Germany, Thu Sep  2 00:07:47 CEST 2010 
+  ##  
+  ##########################################################################*
+
+#
+#  Flags: compiler options, search paths
+#
+
+COPTIONS = -D_XPG4_EXTENDED -Wall # -DHEADER_DES_LOCL_H # -D_DEBUG
+TEMPOPTS = -I. 
+
+ifndef USEROPTS
+USEROPTS = -g
+endif
+
+XCODE=/Applications/Xcode.app/Contents/Developer/Platforms
+
+CFLAGS	 += $(COPTIONS) $(CINCDIRS) $(USEROPTS) -isysroot $(XCODE)/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -arch armv6
+LDFLAGS  += $(CFLAGS) -Wl,-install_name -Wl,$(LIBSNMPPLUS_SHARED_SHORT).$(SOVERSION_MAIN) -isysroot $(XCODE)/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wl,-syslibroot $(XCODE)/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk
+SHARED	 = -fPIC -shared
+
+#
+# Compilation rules
+#
+#CC = $(XCODE)/iPhoneSimulator.platform/Developer/usr/bin/arm-apple-darwin11-llvm-gcc-4.2
+CC = $(XCODE)/iPhoneOS.platform/Developer/usr/bin/g++
+LD = $(XCODE)/iPhoneOS.platform/Developer/usr/bin/ld
+
+include common.mk
