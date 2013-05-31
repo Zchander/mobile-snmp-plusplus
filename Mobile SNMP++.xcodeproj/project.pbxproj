@@ -53,6 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		22517C4E1758CE1E00961906 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		22DB733816401FE600924BEB /* libMobile SNMP++.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libMobile SNMP++.a"; path = libMobileSNMP_PP.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DB733B16401FE600924BEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		22DB733F16401FE600924BEB /* Mobile SNMP++-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mobile SNMP++-Prefix.pch"; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 		22DB732D16401FE600924BEB = {
 			isa = PBXGroup;
 			children = (
+				22517C4E1758CE1E00961906 /* README.md */,
 				22EB926B16406612000CFA4A /* LICENSE */,
 				22DB733D16401FE600924BEB /* Mobile SNMP++ */,
 				22DB733A16401FE600924BEB /* Frameworks */,
@@ -394,7 +396,7 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DYLIB_CURRENT_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.1;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -422,7 +424,7 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
-				DYLIB_CURRENT_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.1;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
