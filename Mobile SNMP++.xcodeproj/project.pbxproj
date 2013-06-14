@@ -54,7 +54,7 @@
 
 /* Begin PBXFileReference section */
 		22517C4E1758CE1E00961906 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		22DB733816401FE600924BEB /* libMobile SNMP++.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libMobile SNMP++.a"; path = libMobileSNMP_PP.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DB733816401FE600924BEB /* libMobileSNMP_PP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMobileSNMP_PP.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DB733B16401FE600924BEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		22DB733F16401FE600924BEB /* Mobile SNMP++-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mobile SNMP++-Prefix.pch"; sourceTree = "<group>"; };
 		22DB73491640202D00924BEB /* XISMobile_SNMP_PP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISMobile_SNMP_PP.h; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 		22DB733916401FE600924BEB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				22DB733816401FE600924BEB /* libMobile SNMP++.a */,
+				22DB733816401FE600924BEB /* libMobileSNMP_PP.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 			);
 			name = MobileSNMP_PP;
 			productName = "Mobile SNMP++";
-			productReference = 22DB733816401FE600924BEB /* libMobile SNMP++.a */;
+			productReference = 22DB733816401FE600924BEB /* libMobileSNMP_PP.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
