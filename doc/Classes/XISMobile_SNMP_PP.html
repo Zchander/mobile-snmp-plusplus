@@ -1,0 +1,656 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>XISMobile_SNMP_PP Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Mobile SNMP++ </a></h1>
+				<a id="developerHome" href="../index.html">Xander Maas</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">XISMobile_SNMP_PP Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/discoverAgents:snmpVersion:remotePort:withCommunity:retry:timeout:error:">&nbsp;&nbsp;&nbsp;&nbsp;- discoverAgents:snmpVersion:remotePort:withCommunity:retry:timeout:error:</option>
+	
+	<option value="//api/name/getOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:error:">&nbsp;&nbsp;&nbsp;&nbsp;- getOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:error:</option>
+	
+	<option value="//api/name/walkOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:walkSubTreeOnly:error:">&nbsp;&nbsp;&nbsp;&nbsp;- walkOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:walkSubTreeOnly:error:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Commandline tools converted into methods">Commandline tools converted into methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/discoverAgents:snmpVersion:remotePort:withCommunity:retry:timeout:error:">discoverAgents:snmpVersion:remotePort:withCommunity:retry:timeout:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:error:">getOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/walkOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:walkSubTreeOnly:error:">walkOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:walkSubTreeOnly:error:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="XISMobile_SNMP_PP Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">XISMobile_SNMP_PP Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">XISMobile_SNMP_PP.h<br />XISMobile_SNMP_PP.mm</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Main class, containing three common commandline commands as methods</p>
+
+<p>This class implements three common commands, so these are available to the programmer in Objective-C or Objective-C++</p>
+
+<p>The project is based on SNMP++v3.2.25 from Jochen Katz, Frank Fock</p><div class="bug"><p><strong>Bug:</strong> <strong>LICENSE</strong></p>
+
+<p>Mobile SNMP++</p>
+
+<p>Created by Xander Maas on 22-08-12.
+Copyright &copy; 2012 Xander Maas</p>
+
+<p>This software is based on SNMP++3.2.25 from Jochem Katz, Frank Fock</p>
+
+<p>Copyright &copy; 2001-2010 Jochen Katz, Frank Fock</p>
+
+<p>This software is based on SNMP++2.6 from Hewlett Packard</p>
+
+<p>Copyright &copy; 1996
+Hewlett-Packard Company</p>
+
+<p><strong>ATTENTION: USE OF THIS SOFTWARE IS SUBJECT TO THE FOLLOWING TERMS.</strong></p>
+
+<p>Permission to use, copy, modify, distribute and/or sell this software
+and/or its documentation is hereby granted without fee. User agrees
+to display the above copyright notice and this license notice in all
+copies of the software and any documentation of the software. User
+agrees to assume all liability for the use of the software;
+Hewlett-Packard, Jochen Katz and Xander Maas make no representations
+about the suitability of this software for any purpose. It is provided
+&ldquo;AS-IS&rdquo; without warranty of any kind, either express or implied. User
+hereby grants a royalty-free license to any and all derivatives based
+upon this software code base.</p>
+
+<p><strong>SNMP++v3.2.25</strong></p>
+
+<p>Copyright &copy; 2001-2010 Jochen Katz, Frank Fock</p>
+
+<p>This software is based on SNMP++2.6 from Hewlett Packard:</p>
+
+<p>   Copyright &copy; 1996
+   Hewlett-Packard Company</p>
+
+<p><strong>ATTENTION: USE OF THIS SOFTWARE IS SUBJECT TO THE FOLLOWING TERMS.</strong></p>
+
+<p>Permission to use, copy, modify, distribute and/or sell this software
+and/or its documentation is hereby granted without fee. User agrees
+to display the above copyright notice and this license notice in all
+copies of the software and any documentation of the software. User
+agrees to assume all liability for the use of the software;
+Hewlett-Packard and Jochen Katz make no representations about the
+suitability of this software for any purpose. It is provided
+&ldquo;AS-IS&rdquo; without warranty of any kind, either express or implied. User
+hereby grants a royalty-free license to any and all derivatives based
+upon this software code base.</p>
+
+<p>Stuttgart, Germany, Thu Sep  2 00:07:47 CEST 2010</p>
+
+<p><strong>SNMP++2.6</strong></p>
+
+<p>Copyright &copy; 1999
+Hewlett-Packard Company</p>
+
+<p><strong>ATTENTION: USE OF THIS SOFTWARE IS SUBJECT TO THE FOLLOWING TERMS.</strong></p>
+
+<p>Permission to use, copy, modify, distribute and/or sell this software
+and/or its documentation is hereby granted without fee. User agrees
+to display the above copyright notice and this license notice in all
+copies of the software and any documentation of the software. User
+agrees to assume all liability for the use of the software; Hewlett-Packard
+makes no representations about the suitability of this software for any
+purpose. It is provided &ldquo;AS-IS&rdquo; without warranty of any kind,either express
+or implied. User hereby grants a royalty-free license to any and all
+derivatives based upon this software code base.</p></div>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Commandline tools converted into methods" name="task_Commandline tools converted into methods"></a>
+						
+<h3 class="subsubtitle task-title">Commandline tools converted into methods</h3>
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/discoverAgents:snmpVersion:remotePort:withCommunity:retry:timeout:error:">&ndash;&nbsp;discoverAgents:snmpVersion:remotePort:withCommunity:retry:timeout:error:</a></code>
+		<span class="tooltip"><p>command: snmpDiscover &ndash; Returns an array with found SNMP agents on the specified network address</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:error:">&ndash;&nbsp;getOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:error:</a></code>
+		<span class="tooltip"><p>Converted command: snmpGet &ndash; Returns the value corresponding to the requested OID</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/walkOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:walkSubTreeOnly:error:">&ndash;&nbsp;walkOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:walkSubTreeOnly:error:</a></code>
+		<span class="tooltip"><p>Converted command: snmpGet &ndash; Returns the value corresponding to the requested OID</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/discoverAgents:snmpVersion:remotePort:withCommunity:retry:timeout:error:" title="discoverAgents:snmpVersion:remotePort:withCommunity:retry:timeout:error:"></a>
+	<h3 class="subsubtitle method-title">discoverAgents:snmpVersion:remotePort:withCommunity:retry:timeout:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>command: snmpDiscover &ndash; Returns an array with found SNMP agents on the specified network address</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)discoverAgents:(NSString *)<em>onBroadcast</em> snmpVersion:(uint)<em>version</em> remotePort:(NSNumber *)<em>aPort</em> withCommunity:(NSString *)<em>community</em> retry:(uint)<em>retries</em> timeout:(uint)<em>timeout</em> error:(NSError *__autoreleasing *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>onBroadcast</em></dt>
+			<dd><p>The broadcast address of the network you wish to scan</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>version</em></dt>
+			<dd><p>The SNMP version you wish to use</p>
+
+<ol>
+<li>SNMP version 1</li>
+<li>SNMP Version 2c</li>
+</ol>
+</dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aPort</em></dt>
+			<dd><p>The UDP port used for the SNMP agent(s), defaults to 161</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>community</em></dt>
+			<dd><p>The readonly community string to identify yourself to the agent(s)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>retries</em></dt>
+			<dd><p>The number of retries before returning the results. Maximum value is 100</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>timeout</em></dt>
+			<dd><p>The timeout in msec. Valid values are between 100 and 500 msec</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>Is an autoreleased NSError</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns an array containing the IP addresses of discovered SNMP agents</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>command: snmpDiscover &ndash; Returns an array with found SNMP agents on the specified network address</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XISMobile_SNMP_PP.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:error:" title="getOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:error:"></a>
+	<h3 class="subsubtitle method-title">getOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Converted command: snmpGet &ndash; Returns the value corresponding to the requested OID</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)getOid:(NSString *)<em>oid</em> address:(NSString *)<em>hostAddress</em> snmpVersion:(uint)<em>version</em> remotePort:(NSNumber *)<em>aPort</em> withCommunity:(NSString *)<em>community</em> retry:(uint)<em>retries</em> timeout:(uint)<em>timeout</em> error:(NSError *__autoreleasing *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>oid</em></dt>
+			<dd><p>The OID you wish to request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>hostAddress</em></dt>
+			<dd><p>The address of the host you wish to query, might be an IPv4 address or a hostname</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>version</em></dt>
+			<dd><p>The SNMP version you wish to use</p>
+
+<ol>
+<li>SNMP version 1</li>
+<li>SNMP Version 2c</li>
+</ol>
+</dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aPort</em></dt>
+			<dd><p>The UDP port used for the SNMP agent(s), defaults to 161</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>community</em></dt>
+			<dd><p>The readonly community string to identify yourself to the agent(s)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>retries</em></dt>
+			<dd><p>The number of retries before returning the results. Maximum value is 100</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>timeout</em></dt>
+			<dd><p>The timeout in msec. Valid values are between 100 and 500 msec</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>Is an autoreleased NSError</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a NSDictionary containing the OID and the corresponding value as NSString</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Converted command: snmpGet &ndash; Returns the value corresponding to the requested OID</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XISMobile_SNMP_PP.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/walkOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:walkSubTreeOnly:error:" title="walkOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:walkSubTreeOnly:error:"></a>
+	<h3 class="subsubtitle method-title">walkOid:address:snmpVersion:remotePort:withCommunity:retry:timeout:walkSubTreeOnly:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Converted command: snmpGet &ndash; Returns the value corresponding to the requested OID</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)walkOid:(NSString *)<em>oid</em> address:(NSString *)<em>hostAddress</em> snmpVersion:(uint)<em>version</em> remotePort:(NSNumber *)<em>aPort</em> withCommunity:(NSString *)<em>community</em> retry:(uint)<em>retries</em> timeout:(uint)<em>timeout</em> walkSubTreeOnly:(BOOL)<em>subTree</em> error:(NSError *__autoreleasing *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>oid</em></dt>
+			<dd><p>The top level OID you wish to start the request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>hostAddress</em></dt>
+			<dd><p>The address of the host you wish to query, might be an IPv4 address or a hostname</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>version</em></dt>
+			<dd><p>The SNMP version you wish to use</p>
+
+<ol>
+<li>SNMP version 1</li>
+<li>SNMP Version 2c</li>
+</ol>
+</dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aPort</em></dt>
+			<dd><p>The UDP port used for the SNMP agent(s), defaults to 161</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>community</em></dt>
+			<dd><p>The readonly community string to identify yourself to the agent(s)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>retries</em></dt>
+			<dd><p>The number of retries before returning the results. Maximum value is 100</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>timeout</em></dt>
+			<dd><p>The timeout in msec. Valid values are between 100 and 500 msec</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>subTree</em></dt>
+			<dd><p>A boolean which indicates wether you wish to walk only the subtree, or the whole tree. <code>YES</code> means you wish to walk only the subtree. <code>NO</code> means you want to read the whole SNMP tree.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>Is an autoreleased NSError</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a NSDictionary containing the OIDs and the corresponding values as NSString</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Converted command: snmpGet &ndash; Returns the value corresponding to the requested OID</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XISMobile_SNMP_PP.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Xander Maas. All rights reserved. (Last updated: 2013-06-12)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
