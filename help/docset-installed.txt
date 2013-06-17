@@ -1,4 +1,0 @@
-Documentation set was installed to Xcode!
-
-Path: /Users/xjmaas/Library/Developer/Shared/Documentation/DocSets/nl.xjmaas.Mobile-SNMP++.docset
-Time: 2012-10-31 07:40:23 +0000
