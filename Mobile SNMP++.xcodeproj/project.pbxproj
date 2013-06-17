@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222532A5176F2AEA00358368 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222532A4176F2AEA00358368 /* UIKit.framework */; };
+		222532A6176F2AEA00358368 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DB733B16401FE600924BEB /* Foundation.framework */; };
+		222532A8176F2AEA00358368 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222532A7176F2AEA00358368 /* CoreGraphics.framework */; };
+		222532AE176F2AEA00358368 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 222532AC176F2AEA00358368 /* InfoPlist.strings */; };
+		222532B0176F2AEA00358368 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 222532AF176F2AEA00358368 /* main.m */; };
+		222532B4176F2AEA00358368 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 222532B3176F2AEA00358368 /* AppDelegate.m */; };
+		222532B6176F2AEA00358368 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 222532B5176F2AEA00358368 /* Default.png */; };
+		222532B8176F2AEA00358368 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 222532B7176F2AEA00358368 /* Default@2x.png */; };
+		222532BA176F2AEA00358368 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 222532B9176F2AEA00358368 /* Default-568h@2x.png */; };
+		222532BD176F2AEA00358368 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222532BB176F2AEA00358368 /* MainStoryboard.storyboard */; };
+		222532C0176F2AEA00358368 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222532BF176F2AEA00358368 /* ViewController.m */; };
+		222532CA176F2BCA00358368 /* SNMPController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 222532C9176F2BCA00358368 /* SNMPController.mm */; };
+		222532CD176F46A900358368 /* libMobileSNMP_PP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DB733816401FE600924BEB /* libMobileSNMP_PP.a */; };
+		222532D0176F484E00358368 /* XISMobile_SNMP_PP.h in Resources */ = {isa = PBXBuildFile; fileRef = 22DB73491640202D00924BEB /* XISMobile_SNMP_PP.h */; };
 		22DB733C16401FE600924BEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DB733B16401FE600924BEB /* Foundation.framework */; };
 		22DB734B1640202D00924BEB /* XISMobile_SNMP_PP.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22DB734A1640202D00924BEB /* XISMobile_SNMP_PP.mm */; };
 		22DB73DA1640205C00924BEB /* address.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73761640205B00924BEB /* address.cpp */; };
@@ -40,6 +54,16 @@
 		22DB742E1640205C00924BEB /* vb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73D61640205C00924BEB /* vb.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		222532CE176F46AF00358368 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22DB732F16401FE600924BEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22DB733716401FE600924BEB;
+			remoteInfo = MobileSNMP_PP;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		22DB733616401FE600924BEB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -53,6 +77,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		222532A3176F2AEA00358368 /* snmpGetSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snmpGetSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		222532A4176F2AEA00358368 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		222532A7176F2AEA00358368 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		222532AB176F2AEA00358368 /* snmpGetSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "snmpGetSample-Info.plist"; sourceTree = "<group>"; };
+		222532AD176F2AEA00358368 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		222532AF176F2AEA00358368 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		222532B1176F2AEA00358368 /* snmpGetSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "snmpGetSample-Prefix.pch"; sourceTree = "<group>"; };
+		222532B2176F2AEA00358368 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		222532B3176F2AEA00358368 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		222532B5176F2AEA00358368 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		222532B7176F2AEA00358368 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		222532B9176F2AEA00358368 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		222532BC176F2AEA00358368 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		222532BE176F2AEA00358368 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		222532BF176F2AEA00358368 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		222532C8176F2BCA00358368 /* SNMPController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNMPController.h; sourceTree = "<group>"; };
+		222532C9176F2BCA00358368 /* SNMPController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SNMPController.mm; sourceTree = "<group>"; };
 		22517C4E1758CE1E00961906 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		22DB733816401FE600924BEB /* libMobileSNMP_PP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMobileSNMP_PP.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DB733B16401FE600924BEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -141,6 +182,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		222532A0176F2AEA00358368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222532CD176F46A900358368 /* libMobileSNMP_PP.a in Frameworks */,
+				222532A5176F2AEA00358368 /* UIKit.framework in Frameworks */,
+				222532A6176F2AEA00358368 /* Foundation.framework in Frameworks */,
+				222532A8176F2AEA00358368 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22DB733516401FE600924BEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,12 +204,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		222532A9176F2AEA00358368 /* snmpGetSample */ = {
+			isa = PBXGroup;
+			children = (
+				222532B2176F2AEA00358368 /* AppDelegate.h */,
+				222532B3176F2AEA00358368 /* AppDelegate.m */,
+				222532BB176F2AEA00358368 /* MainStoryboard.storyboard */,
+				222532BE176F2AEA00358368 /* ViewController.h */,
+				222532BF176F2AEA00358368 /* ViewController.m */,
+				222532AA176F2AEA00358368 /* Supporting Files */,
+				222532C8176F2BCA00358368 /* SNMPController.h */,
+				222532C9176F2BCA00358368 /* SNMPController.mm */,
+			);
+			path = snmpGetSample;
+			sourceTree = "<group>";
+		};
+		222532AA176F2AEA00358368 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				222532AB176F2AEA00358368 /* snmpGetSample-Info.plist */,
+				222532AC176F2AEA00358368 /* InfoPlist.strings */,
+				222532AF176F2AEA00358368 /* main.m */,
+				222532B1176F2AEA00358368 /* snmpGetSample-Prefix.pch */,
+				222532B5176F2AEA00358368 /* Default.png */,
+				222532B7176F2AEA00358368 /* Default@2x.png */,
+				222532B9176F2AEA00358368 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		22DB732D16401FE600924BEB = {
 			isa = PBXGroup;
 			children = (
 				22517C4E1758CE1E00961906 /* README.md */,
 				22EB926B16406612000CFA4A /* LICENSE */,
 				22DB733D16401FE600924BEB /* Mobile SNMP++ */,
+				222532A9176F2AEA00358368 /* snmpGetSample */,
 				22DB733A16401FE600924BEB /* Frameworks */,
 				22DB733916401FE600924BEB /* Products */,
 			);
@@ -167,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				22DB733816401FE600924BEB /* libMobileSNMP_PP.a */,
+				222532A3176F2AEA00358368 /* snmpGetSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				22DB733B16401FE600924BEB /* Foundation.framework */,
+				222532A4176F2AEA00358368 /* UIKit.framework */,
+				222532A7176F2AEA00358368 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -185,8 +270,8 @@
 				22DB74311640208700924BEB /* XIS_SNMPDefinitions.h */,
 				22DB734C1640205B00924BEB /* include */,
 				22DB73751640205B00924BEB /* src */,
-				22DB73491640202D00924BEB /* XISMobile_SNMP_PP.h */,
 				22DB734A1640202D00924BEB /* XISMobile_SNMP_PP.mm */,
+				22DB73491640202D00924BEB /* XISMobile_SNMP_PP.h */,
 				22DB733E16401FE600924BEB /* Supporting Files */,
 			);
 			path = "Mobile SNMP++";
@@ -302,6 +387,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		222532A2176F2AEA00358368 /* snmpGetSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 222532C3176F2AEA00358368 /* Build configuration list for PBXNativeTarget "snmpGetSample" */;
+			buildPhases = (
+				2225329F176F2AEA00358368 /* Sources */,
+				222532A0176F2AEA00358368 /* Frameworks */,
+				222532A1176F2AEA00358368 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				222532CF176F46AF00358368 /* PBXTargetDependency */,
+			);
+			name = snmpGetSample;
+			productName = snmpGetSample;
+			productReference = 222532A3176F2AEA00358368 /* snmpGetSample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		22DB733716401FE600924BEB /* MobileSNMP_PP */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22DB734616401FE600924BEB /* Build configuration list for PBXNativeTarget "MobileSNMP_PP" */;
@@ -341,11 +444,39 @@
 			projectRoot = "";
 			targets = (
 				22DB733716401FE600924BEB /* MobileSNMP_PP */,
+				222532A2176F2AEA00358368 /* snmpGetSample */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		222532A1176F2AEA00358368 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222532D0176F484E00358368 /* XISMobile_SNMP_PP.h in Resources */,
+				222532AE176F2AEA00358368 /* InfoPlist.strings in Resources */,
+				222532B6176F2AEA00358368 /* Default.png in Resources */,
+				222532B8176F2AEA00358368 /* Default@2x.png in Resources */,
+				222532BA176F2AEA00358368 /* Default-568h@2x.png in Resources */,
+				222532BD176F2AEA00358368 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		2225329F176F2AEA00358368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222532B0176F2AEA00358368 /* main.m in Sources */,
+				222532B4176F2AEA00358368 /* AppDelegate.m in Sources */,
+				222532C0176F2AEA00358368 /* ViewController.m in Sources */,
+				222532CA176F2BCA00358368 /* SNMPController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22DB733416401FE600924BEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,7 +516,71 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		222532CF176F46AF00358368 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22DB733716401FE600924BEB /* MobileSNMP_PP */;
+			targetProxy = 222532CE176F46AF00358368 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		222532AC176F2AEA00358368 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				222532AD176F2AEA00358368 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		222532BB176F2AEA00358368 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				222532BC176F2AEA00358368 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		222532C1176F2AEA00358368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "snmpGetSample/snmpGetSample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = "snmpGetSample/snmpGetSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		222532C2176F2AEA00358368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "snmpGetSample/snmpGetSample-Prefix.pch";
+				INFOPLIST_FILE = "snmpGetSample/snmpGetSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		22DB734416401FE600924BEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -401,7 +596,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG1=1",
+					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
@@ -464,6 +659,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		222532C3176F2AEA00358368 /* Build configuration list for PBXNativeTarget "snmpGetSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				222532C1176F2AEA00358368 /* Debug */,
+				222532C2176F2AEA00358368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		22DB733216401FE600924BEB /* Build configuration list for PBXProject "Mobile SNMP++" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

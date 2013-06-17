@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>snmpGetSample.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>222532A2176F2AEA00358368</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>22DB733716401FE600924BEB</key>
 		<dict>
 			<key>primary</key>
