@@ -204,7 +204,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		222532A9176F2AEA00358368 /* snmpGetSample */ = {
+		222532A9176F2AEA00358368 /* SnmpGetSample */ = {
 			isa = PBXGroup;
 			children = (
 				222532B2176F2AEA00358368 /* AppDelegate.h */,
@@ -216,6 +216,7 @@
 				222532C8176F2BCA00358368 /* SNMPController.h */,
 				222532C9176F2BCA00358368 /* SNMPController.mm */,
 			);
+			name = SnmpGetSample;
 			path = snmpGetSample;
 			sourceTree = "<group>";
 		};
@@ -239,7 +240,7 @@
 				22517C4E1758CE1E00961906 /* README.md */,
 				22EB926B16406612000CFA4A /* LICENSE */,
 				22DB733D16401FE600924BEB /* Mobile SNMP++ */,
-				222532A9176F2AEA00358368 /* snmpGetSample */,
+				222532A9176F2AEA00358368 /* SnmpGetSample */,
 				22DB733A16401FE600924BEB /* Frameworks */,
 				22DB733916401FE600924BEB /* Products */,
 			);
@@ -666,6 +667,7 @@
 				222532C2176F2AEA00358368 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22DB733216401FE600924BEB /* Build configuration list for PBXProject "Mobile SNMP++" */ = {
 			isa = XCConfigurationList;
