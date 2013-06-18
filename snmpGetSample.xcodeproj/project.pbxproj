@@ -23,6 +23,23 @@
 		22FE0EBA17708E4800DD859F /* XISMobile_SNMP_PP.h in Resources */ = {isa = PBXBuildFile; fileRef = 22FE0EB917708E4800DD859F /* XISMobile_SNMP_PP.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		22C5CEEC1770906A00025943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22FE0EB517708E2500DD859F /* Mobile SNMP++.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22DB733816401FE600924BEB;
+			remoteInfo = MobileSNMP_PP;
+		};
+		22C5CEEE1770906A00025943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22FE0EB517708E2500DD859F /* Mobile SNMP++.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 222532A3176F2AEA00358368;
+			remoteInfo = snmpGetSample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		22FE0E8C1770850600DD859F /* snmpGetSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snmpGetSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FE0E8F1770850600DD859F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -42,9 +59,9 @@
 		22FE0EAB1770850600DD859F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		22FE0EB21770852D00DD859F /* SNMPController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNMPController.h; sourceTree = "<group>"; };
 		22FE0EB31770852D00DD859F /* SNMPController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SNMPController.mm; sourceTree = "<group>"; };
-		22FE0EB517708E2500DD859F /* Mobile SNMP++.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mobile SNMP++.xcodeproj"; sourceTree = "<group>"; };
-		22FE0EB717708E3F00DD859F /* libMobileSNMP_PP.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libMobileSNMP_PP.a; path = "build/Release-iphoneos/libMobileSNMP_PP.a"; sourceTree = "<group>"; };
-		22FE0EB917708E4800DD859F /* XISMobile_SNMP_PP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = XISMobile_SNMP_PP.h; path = "../Mobile SNMP++/XISMobile_SNMP_PP.h"; sourceTree = "<group>"; };
+		22FE0EB517708E2500DD859F /* Mobile SNMP++.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Mobile SNMP++.xcodeproj"; sourceTree = "<group>"; };
+		22FE0EB717708E3F00DD859F /* libMobileSNMP_PP.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMobileSNMP_PP.a; path = "build/Release-iphoneos/libMobileSNMP_PP.a"; sourceTree = "<group>"; };
+		22FE0EB917708E4800DD859F /* XISMobile_SNMP_PP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XISMobile_SNMP_PP.h; path = "../Mobile SNMP++/XISMobile_SNMP_PP.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22C5CEE81770906A00025943 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22C5CEED1770906A00025943 /* libMobileSNMP_PP.a */,
+				22C5CEEF1770906A00025943 /* snmpGetSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		22FE0E831770850600DD859F = {
 			isa = PBXGroup;
 			children = (
@@ -160,12 +186,35 @@
 			mainGroup = 22FE0E831770850600DD859F;
 			productRefGroup = 22FE0E8D1770850600DD859F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 22C5CEE81770906A00025943 /* Products */;
+					ProjectRef = 22FE0EB517708E2500DD859F /* Mobile SNMP++.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				22FE0E8B1770850600DD859F /* snmpGetSample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		22C5CEED1770906A00025943 /* libMobileSNMP_PP.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMobileSNMP_PP.a;
+			remoteRef = 22C5CEEC1770906A00025943 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22C5CEEF1770906A00025943 /* snmpGetSample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = snmpGetSample.app;
+			remoteRef = 22C5CEEE1770906A00025943 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		22FE0E8A1770850600DD859F /* Resources */ = {
