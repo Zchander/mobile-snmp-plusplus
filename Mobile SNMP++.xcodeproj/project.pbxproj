@@ -7,6 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0ACF8BD32701C21200088D63 /* msgqueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BAB2701C21200088D63 /* msgqueue.cpp */; };
+		0ACF8BD42701C21200088D63 /* v3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BAC2701C21200088D63 /* v3.cpp */; };
+		0ACF8BD52701C21200088D63 /* gauge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BAD2701C21200088D63 /* gauge.cpp */; };
+		0ACF8BD62701C21200088D63 /* oid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BAE2701C21200088D63 /* oid.cpp */; };
+		0ACF8BD72701C21200088D63 /* md5c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BAF2701C21200088D63 /* md5c.cpp */; };
+		0ACF8BD82701C21200088D63 /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BB12701C21200088D63 /* log.cpp */; };
+		0ACF8BD92701C21200088D63 /* snmpmsg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BB22701C21200088D63 /* snmpmsg.cpp */; };
+		0ACF8BDA2701C21200088D63 /* idea.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BB32701C21200088D63 /* idea.cpp */; };
+		0ACF8BDB2701C21200088D63 /* vb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BB42701C21200088D63 /* vb.cpp */; };
+		0ACF8BDC2701C21200088D63 /* pdu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BB72701C21200088D63 /* pdu.cpp */; };
+		0ACF8BDD2701C21200088D63 /* notifyqueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BB92701C21200088D63 /* notifyqueue.cpp */; };
+		0ACF8BDE2701C21200088D63 /* usertimeout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BBA2701C21200088D63 /* usertimeout.cpp */; };
+		0ACF8BDF2701C21200088D63 /* ctr64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BBB2701C21200088D63 /* ctr64.cpp */; };
+		0ACF8BE02701C21200088D63 /* sha.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BBC2701C21200088D63 /* sha.cpp */; };
+		0ACF8BE12701C21200088D63 /* IPv6Utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BBD2701C21200088D63 /* IPv6Utility.cpp */; };
+		0ACF8BE22701C21200088D63 /* userdefined.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BBF2701C21200088D63 /* userdefined.cpp */; };
+		0ACF8BE32701C21200088D63 /* eventlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BC02701C21200088D63 /* eventlist.cpp */; };
+		0ACF8BE42701C21200088D63 /* counter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BC22701C21200088D63 /* counter.cpp */; };
+		0ACF8BE52701C21200088D63 /* msec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BC32701C21200088D63 /* msec.cpp */; };
+		0ACF8BE62701C21200088D63 /* address.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BC52701C21200088D63 /* address.cpp */; };
+		0ACF8BE72701C21200088D63 /* target.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BC62701C21200088D63 /* target.cpp */; };
+		0ACF8BE82701C21200088D63 /* timetick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BC82701C21200088D63 /* timetick.cpp */; };
+		0ACF8BE92701C21200088D63 /* octet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BC92701C21200088D63 /* octet.cpp */; };
+		0ACF8BEA2701C21200088D63 /* auth_priv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BCA2701C21200088D63 /* auth_priv.cpp */; };
+		0ACF8BEB2701C21200088D63 /* integer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BCB2701C21200088D63 /* integer.cpp */; };
+		0ACF8BEC2701C21200088D63 /* usm_v3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BCC2701C21200088D63 /* usm_v3.cpp */; };
+		0ACF8BED2701C21200088D63 /* reentrant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BCD2701C21200088D63 /* reentrant.cpp */; };
+		0ACF8BEE2701C21200088D63 /* asn1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BCE2701C21200088D63 /* asn1.cpp */; };
+		0ACF8BEF2701C21200088D63 /* eventlistholder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BD02701C21200088D63 /* eventlistholder.cpp */; };
+		0ACF8BF02701C21200088D63 /* mp_v3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BD12701C21200088D63 /* mp_v3.cpp */; };
+		0ACF8BF12701C21200088D63 /* uxsnmp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8BD22701C21200088D63 /* uxsnmp.cpp */; };
 		222532A5176F2AEA00358368 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222532A4176F2AEA00358368 /* UIKit.framework */; };
 		222532A6176F2AEA00358368 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DB733B16401FE600924BEB /* Foundation.framework */; };
 		222532A8176F2AEA00358368 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222532A7176F2AEA00358368 /* CoreGraphics.framework */; };
@@ -14,35 +45,6 @@
 		222532D0176F484E00358368 /* XISMobile_SNMP_PP.h in Resources */ = {isa = PBXBuildFile; fileRef = 22DB73491640202D00924BEB /* XISMobile_SNMP_PP.h */; };
 		22DB733C16401FE600924BEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DB733B16401FE600924BEB /* Foundation.framework */; };
 		22DB734B1640202D00924BEB /* XISMobile_SNMP_PP.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22DB734A1640202D00924BEB /* XISMobile_SNMP_PP.mm */; };
-		22DB73DA1640205C00924BEB /* address.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73761640205B00924BEB /* address.cpp */; };
-		22DB73DD1640205C00924BEB /* asn1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73791640205C00924BEB /* asn1.cpp */; };
-		22DB73E01640205C00924BEB /* auth_priv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB737C1640205C00924BEB /* auth_priv.cpp */; };
-		22DB73E31640205C00924BEB /* counter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73801640205C00924BEB /* counter.cpp */; };
-		22DB73E61640205C00924BEB /* ctr64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73831640205C00924BEB /* ctr64.cpp */; };
-		22DB73E91640205C00924BEB /* eventlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73861640205C00924BEB /* eventlist.cpp */; };
-		22DB73EC1640205C00924BEB /* eventlistholder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73891640205C00924BEB /* eventlistholder.cpp */; };
-		22DB73EF1640205C00924BEB /* gauge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB738C1640205C00924BEB /* gauge.cpp */; };
-		22DB73F21640205C00924BEB /* idea.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB738F1640205C00924BEB /* idea.cpp */; };
-		22DB73F51640205C00924BEB /* integer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73921640205C00924BEB /* integer.cpp */; };
-		22DB73F81640205C00924BEB /* IPv6Utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73951640205C00924BEB /* IPv6Utility.cpp */; };
-		22DB73FB1640205C00924BEB /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73981640205C00924BEB /* log.cpp */; };
-		22DB73FE1640205C00924BEB /* md5c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73A61640205C00924BEB /* md5c.cpp */; };
-		22DB74011640205C00924BEB /* mp_v3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73A91640205C00924BEB /* mp_v3.cpp */; };
-		22DB74041640205C00924BEB /* msec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73AC1640205C00924BEB /* msec.cpp */; };
-		22DB74071640205C00924BEB /* msgqueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73AF1640205C00924BEB /* msgqueue.cpp */; };
-		22DB740A1640205C00924BEB /* notifyqueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73B21640205C00924BEB /* notifyqueue.cpp */; };
-		22DB740D1640205C00924BEB /* octet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73B51640205C00924BEB /* octet.cpp */; };
-		22DB74101640205C00924BEB /* oid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73B81640205C00924BEB /* oid.cpp */; };
-		22DB74131640205C00924BEB /* pdu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73BB1640205C00924BEB /* pdu.cpp */; };
-		22DB74161640205C00924BEB /* reentrant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73BE1640205C00924BEB /* reentrant.cpp */; };
-		22DB74191640205C00924BEB /* sha.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73C11640205C00924BEB /* sha.cpp */; };
-		22DB741C1640205C00924BEB /* snmpmsg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73C41640205C00924BEB /* snmpmsg.cpp */; };
-		22DB741F1640205C00924BEB /* target.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73C71640205C00924BEB /* target.cpp */; };
-		22DB74221640205C00924BEB /* timetick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73CA1640205C00924BEB /* timetick.cpp */; };
-		22DB74251640205C00924BEB /* usm_v3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73CD1640205C00924BEB /* usm_v3.cpp */; };
-		22DB74281640205C00924BEB /* uxsnmp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73D01640205C00924BEB /* uxsnmp.cpp */; };
-		22DB742B1640205C00924BEB /* v3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73D31640205C00924BEB /* v3.cpp */; };
-		22DB742E1640205C00924BEB /* vb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DB73D61640205C00924BEB /* vb.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,91 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0ACF8BAA2701C21200088D63 /* Makefile.hpux11 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.hpux11; sourceTree = "<group>"; };
+		0ACF8BAB2701C21200088D63 /* msgqueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = msgqueue.cpp; sourceTree = "<group>"; };
+		0ACF8BAC2701C21200088D63 /* v3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = v3.cpp; sourceTree = "<group>"; };
+		0ACF8BAD2701C21200088D63 /* gauge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gauge.cpp; sourceTree = "<group>"; };
+		0ACF8BAE2701C21200088D63 /* oid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = oid.cpp; sourceTree = "<group>"; };
+		0ACF8BAF2701C21200088D63 /* md5c.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = md5c.cpp; sourceTree = "<group>"; };
+		0ACF8BB02701C21200088D63 /* Makefile.bcc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.bcc; sourceTree = "<group>"; };
+		0ACF8BB12701C21200088D63 /* log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = log.cpp; sourceTree = "<group>"; };
+		0ACF8BB22701C21200088D63 /* snmpmsg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = snmpmsg.cpp; sourceTree = "<group>"; };
+		0ACF8BB32701C21200088D63 /* idea.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = idea.cpp; sourceTree = "<group>"; };
+		0ACF8BB42701C21200088D63 /* vb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vb.cpp; sourceTree = "<group>"; };
+		0ACF8BB52701C21200088D63 /* common.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = common.mk; sourceTree = "<group>"; };
+		0ACF8BB62701C21200088D63 /* Makefile.linux */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.linux; sourceTree = "<group>"; };
+		0ACF8BB72701C21200088D63 /* pdu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pdu.cpp; sourceTree = "<group>"; };
+		0ACF8BB82701C21200088D63 /* Makefile.solaris */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.solaris; sourceTree = "<group>"; };
+		0ACF8BB92701C21200088D63 /* notifyqueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = notifyqueue.cpp; sourceTree = "<group>"; };
+		0ACF8BBA2701C21200088D63 /* usertimeout.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = usertimeout.cpp; sourceTree = "<group>"; };
+		0ACF8BBB2701C21200088D63 /* ctr64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ctr64.cpp; sourceTree = "<group>"; };
+		0ACF8BBC2701C21200088D63 /* sha.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sha.cpp; sourceTree = "<group>"; };
+		0ACF8BBD2701C21200088D63 /* IPv6Utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IPv6Utility.cpp; sourceTree = "<group>"; };
+		0ACF8BBE2701C21200088D63 /* Makefile.aix5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.aix5; sourceTree = "<group>"; };
+		0ACF8BBF2701C21200088D63 /* userdefined.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = userdefined.cpp; sourceTree = "<group>"; };
+		0ACF8BC02701C21200088D63 /* eventlist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = eventlist.cpp; sourceTree = "<group>"; };
+		0ACF8BC12701C21200088D63 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		0ACF8BC22701C21200088D63 /* counter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = counter.cpp; sourceTree = "<group>"; };
+		0ACF8BC32701C21200088D63 /* msec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = msec.cpp; sourceTree = "<group>"; };
+		0ACF8BC42701C21200088D63 /* Makefile.gcc_solaris */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.gcc_solaris; sourceTree = "<group>"; };
+		0ACF8BC52701C21200088D63 /* address.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = address.cpp; sourceTree = "<group>"; };
+		0ACF8BC62701C21200088D63 /* target.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = target.cpp; sourceTree = "<group>"; };
+		0ACF8BC72701C21200088D63 /* Makefile.dunix */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.dunix; sourceTree = "<group>"; };
+		0ACF8BC82701C21200088D63 /* timetick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timetick.cpp; sourceTree = "<group>"; };
+		0ACF8BC92701C21200088D63 /* octet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = octet.cpp; sourceTree = "<group>"; };
+		0ACF8BCA2701C21200088D63 /* auth_priv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = auth_priv.cpp; sourceTree = "<group>"; };
+		0ACF8BCB2701C21200088D63 /* integer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = integer.cpp; sourceTree = "<group>"; };
+		0ACF8BCC2701C21200088D63 /* usm_v3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = usm_v3.cpp; sourceTree = "<group>"; };
+		0ACF8BCD2701C21200088D63 /* reentrant.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = reentrant.cpp; sourceTree = "<group>"; };
+		0ACF8BCE2701C21200088D63 /* asn1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = asn1.cpp; sourceTree = "<group>"; };
+		0ACF8BCF2701C21200088D63 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		0ACF8BD02701C21200088D63 /* eventlistholder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = eventlistholder.cpp; sourceTree = "<group>"; };
+		0ACF8BD12701C21200088D63 /* mp_v3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mp_v3.cpp; sourceTree = "<group>"; };
+		0ACF8BD22701C21200088D63 /* uxsnmp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uxsnmp.cpp; sourceTree = "<group>"; };
+		0ACF8BF42701C21C00088D63 /* oid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oid.h; sourceTree = "<group>"; };
+		0ACF8BF52701C21C00088D63 /* usertimeout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usertimeout.h; sourceTree = "<group>"; };
+		0ACF8BF62701C21C00088D63 /* vb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vb.h; sourceTree = "<group>"; };
+		0ACF8BF72701C21C00088D63 /* gauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gauge.h; sourceTree = "<group>"; };
+		0ACF8BF82701C21C00088D63 /* config_snmp_pp.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config_snmp_pp.h.in; sourceTree = "<group>"; };
+		0ACF8BF92701C21C00088D63 /* notifyqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = notifyqueue.h; sourceTree = "<group>"; };
+		0ACF8BFA2701C21C00088D63 /* pdu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pdu.h; sourceTree = "<group>"; };
+		0ACF8BFB2701C21C00088D63 /* ctr64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ctr64.h; sourceTree = "<group>"; };
+		0ACF8BFC2701C21C00088D63 /* counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = counter.h; sourceTree = "<group>"; };
+		0ACF8BFD2701C21C00088D63 /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		0ACF8BFE2701C21C00088D63 /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		0ACF8BFF2701C21C00088D63 /* IPv6Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPv6Utility.h; sourceTree = "<group>"; };
+		0ACF8C002701C21C00088D63 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		0ACF8C012701C21C00088D63 /* address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = address.h; sourceTree = "<group>"; };
+		0ACF8C022701C21C00088D63 /* uxsnmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uxsnmp.h; sourceTree = "<group>"; };
+		0ACF8C032701C21C00088D63 /* smival.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smival.h; sourceTree = "<group>"; };
+		0ACF8C042701C21C00088D63 /* userdefined.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userdefined.h; sourceTree = "<group>"; };
+		0ACF8C052701C21C00088D63 /* timetick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timetick.h; sourceTree = "<group>"; };
+		0ACF8C062701C21C00088D63 /* config_snmp_pp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_snmp_pp.h; sourceTree = "<group>"; };
+		0ACF8C072701C21C00088D63 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		0ACF8C082701C21C00088D63 /* reentrant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reentrant.h; sourceTree = "<group>"; };
+		0ACF8C092701C21C00088D63 /* collect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = collect.h; sourceTree = "<group>"; };
+		0ACF8C0A2701C21C00088D63 /* smi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smi.h; sourceTree = "<group>"; };
+		0ACF8C0B2701C21C00088D63 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		0ACF8C0C2701C21C00088D63 /* snmperrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmperrs.h; sourceTree = "<group>"; };
+		0ACF8C0D2701C21C00088D63 /* target.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = target.h; sourceTree = "<group>"; };
+		0ACF8C0E2701C21C00088D63 /* oid_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oid_def.h; sourceTree = "<group>"; };
+		0ACF8C0F2701C21C00088D63 /* octet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = octet.h; sourceTree = "<group>"; };
+		0ACF8C102701C21C00088D63 /* snmpmsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmpmsg.h; sourceTree = "<group>"; };
+		0ACF8C112701C21C00088D63 /* snmp_pp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_pp.h; sourceTree = "<group>"; };
+		0ACF8C122701C21C00088D63 /* mp_v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mp_v3.h; sourceTree = "<group>"; };
+		0ACF8C132701C21C00088D63 /* eventlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eventlist.h; sourceTree = "<group>"; };
+		0ACF8C142701C21C00088D63 /* auth_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_priv.h; sourceTree = "<group>"; };
+		0ACF8C152701C21C00088D63 /* usm_v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usm_v3.h; sourceTree = "<group>"; };
+		0ACF8C162701C21C00088D63 /* integer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = integer.h; sourceTree = "<group>"; };
+		0ACF8C172701C21C00088D63 /* msec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msec.h; sourceTree = "<group>"; };
+		0ACF8C182701C21C00088D63 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		0ACF8C192701C21C00088D63 /* msgqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msgqueue.h; sourceTree = "<group>"; };
+		0ACF8C1A2701C21C00088D63 /* eventlistholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eventlistholder.h; sourceTree = "<group>"; };
+		0ACF8C1B2701C21C00088D63 /* v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v3.h; sourceTree = "<group>"; };
+		0ACF8C1C2701C21C00088D63 /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
+		0ACF8C1D2701C21C00088D63 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		0ACF8C1E2701C21C00088D63 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		0ACF8C1F2701C35000088D63 /* libsnmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libsnmp.h; sourceTree = "<group>"; };
 		222532A3176F2AEA00358368 /* snmpGetSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snmpGetSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		222532A4176F2AEA00358368 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		222532A7176F2AEA00358368 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -77,83 +164,6 @@
 		22DB733F16401FE600924BEB /* Mobile SNMP++-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mobile SNMP++-Prefix.pch"; sourceTree = "<group>"; };
 		22DB73491640202D00924BEB /* XISMobile_SNMP_PP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISMobile_SNMP_PP.h; sourceTree = "<group>"; };
 		22DB734A1640202D00924BEB /* XISMobile_SNMP_PP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XISMobile_SNMP_PP.mm; sourceTree = "<group>"; };
-		22DB734E1640205B00924BEB /* address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = address.h; sourceTree = "<group>"; };
-		22DB734F1640205B00924BEB /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
-		22DB73501640205B00924BEB /* auth_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_priv.h; sourceTree = "<group>"; };
-		22DB73511640205B00924BEB /* collect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = collect.h; sourceTree = "<group>"; };
-		22DB73521640205B00924BEB /* config_snmp_pp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_snmp_pp.h; sourceTree = "<group>"; };
-		22DB73531640205B00924BEB /* counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = counter.h; sourceTree = "<group>"; };
-		22DB73541640205B00924BEB /* ctr64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ctr64.h; sourceTree = "<group>"; };
-		22DB73551640205B00924BEB /* eventlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eventlist.h; sourceTree = "<group>"; };
-		22DB73561640205B00924BEB /* eventlistholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eventlistholder.h; sourceTree = "<group>"; };
-		22DB73571640205B00924BEB /* gauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gauge.h; sourceTree = "<group>"; };
-		22DB73581640205B00924BEB /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
-		22DB73591640205B00924BEB /* integer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = integer.h; sourceTree = "<group>"; };
-		22DB735A1640205B00924BEB /* IPv6Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPv6Utility.h; sourceTree = "<group>"; };
-		22DB735B1640205B00924BEB /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
-		22DB735C1640205B00924BEB /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
-		22DB735D1640205B00924BEB /* mp_v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mp_v3.h; sourceTree = "<group>"; };
-		22DB735E1640205B00924BEB /* msec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msec.h; sourceTree = "<group>"; };
-		22DB735F1640205B00924BEB /* msgqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msgqueue.h; sourceTree = "<group>"; };
-		22DB73601640205B00924BEB /* notifyqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = notifyqueue.h; sourceTree = "<group>"; };
-		22DB73611640205B00924BEB /* octet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = octet.h; sourceTree = "<group>"; };
-		22DB73621640205B00924BEB /* oid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oid.h; sourceTree = "<group>"; };
-		22DB73631640205B00924BEB /* oid_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oid_def.h; sourceTree = "<group>"; };
-		22DB73641640205B00924BEB /* pdu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pdu.h; sourceTree = "<group>"; };
-		22DB73651640205B00924BEB /* reentrant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reentrant.h; sourceTree = "<group>"; };
-		22DB73661640205B00924BEB /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
-		22DB73671640205B00924BEB /* smi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smi.h; sourceTree = "<group>"; };
-		22DB73681640205B00924BEB /* smival.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smival.h; sourceTree = "<group>"; };
-		22DB73691640205B00924BEB /* snmp_pp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_pp.h; sourceTree = "<group>"; };
-		22DB736A1640205B00924BEB /* snmperrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmperrs.h; sourceTree = "<group>"; };
-		22DB736B1640205B00924BEB /* snmpmsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmpmsg.h; sourceTree = "<group>"; };
-		22DB736C1640205B00924BEB /* target.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = target.h; sourceTree = "<group>"; };
-		22DB736D1640205B00924BEB /* timetick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timetick.h; sourceTree = "<group>"; };
-		22DB736E1640205B00924BEB /* usm_v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usm_v3.h; sourceTree = "<group>"; };
-		22DB736F1640205B00924BEB /* uxsnmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uxsnmp.h; sourceTree = "<group>"; };
-		22DB73701640205B00924BEB /* v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v3.h; sourceTree = "<group>"; };
-		22DB73711640205B00924BEB /* vb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vb.h; sourceTree = "<group>"; };
-		22DB73761640205B00924BEB /* address.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = address.cpp; sourceTree = "<group>"; };
-		22DB73791640205C00924BEB /* asn1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = asn1.cpp; sourceTree = "<group>"; };
-		22DB737C1640205C00924BEB /* auth_priv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = auth_priv.cpp; sourceTree = "<group>"; };
-		22DB737F1640205C00924BEB /* common.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = common.mk; sourceTree = "<group>"; };
-		22DB73801640205C00924BEB /* counter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = counter.cpp; sourceTree = "<group>"; };
-		22DB73831640205C00924BEB /* ctr64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ctr64.cpp; sourceTree = "<group>"; };
-		22DB73861640205C00924BEB /* eventlist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = eventlist.cpp; sourceTree = "<group>"; };
-		22DB73891640205C00924BEB /* eventlistholder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = eventlistholder.cpp; sourceTree = "<group>"; };
-		22DB738C1640205C00924BEB /* gauge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gauge.cpp; sourceTree = "<group>"; };
-		22DB738F1640205C00924BEB /* idea.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = idea.cpp; sourceTree = "<group>"; };
-		22DB73921640205C00924BEB /* integer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = integer.cpp; sourceTree = "<group>"; };
-		22DB73951640205C00924BEB /* IPv6Utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IPv6Utility.cpp; sourceTree = "<group>"; };
-		22DB73981640205C00924BEB /* log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = log.cpp; sourceTree = "<group>"; };
-		22DB739B1640205C00924BEB /* Makefile.aix5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.aix5; sourceTree = "<group>"; };
-		22DB739C1640205C00924BEB /* Makefile.bcc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.bcc; sourceTree = "<group>"; };
-		22DB739D1640205C00924BEB /* Makefile.dunix */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.dunix; sourceTree = "<group>"; };
-		22DB739E1640205C00924BEB /* Makefile.gcc_solaris */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.gcc_solaris; sourceTree = "<group>"; };
-		22DB739F1640205C00924BEB /* Makefile.hpux11 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.hpux11; sourceTree = "<group>"; };
-		22DB73A01640205C00924BEB /* Makefile.iOS_armv6 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.iOS_armv6; sourceTree = "<group>"; };
-		22DB73A11640205C00924BEB /* Makefile.iOS_armv7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.iOS_armv7; sourceTree = "<group>"; };
-		22DB73A21640205C00924BEB /* Makefile.iOS_Sim */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.iOS_Sim; sourceTree = "<group>"; };
-		22DB73A31640205C00924BEB /* Makefile.linux */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.linux; sourceTree = "<group>"; };
-		22DB73A41640205C00924BEB /* Makefile.OSX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.OSX; sourceTree = "<group>"; };
-		22DB73A51640205C00924BEB /* Makefile.solaris */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.solaris; sourceTree = "<group>"; };
-		22DB73A61640205C00924BEB /* md5c.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = md5c.cpp; sourceTree = "<group>"; };
-		22DB73A91640205C00924BEB /* mp_v3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mp_v3.cpp; sourceTree = "<group>"; };
-		22DB73AC1640205C00924BEB /* msec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = msec.cpp; sourceTree = "<group>"; };
-		22DB73AF1640205C00924BEB /* msgqueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = msgqueue.cpp; sourceTree = "<group>"; };
-		22DB73B21640205C00924BEB /* notifyqueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = notifyqueue.cpp; sourceTree = "<group>"; };
-		22DB73B51640205C00924BEB /* octet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = octet.cpp; sourceTree = "<group>"; };
-		22DB73B81640205C00924BEB /* oid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = oid.cpp; sourceTree = "<group>"; };
-		22DB73BB1640205C00924BEB /* pdu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pdu.cpp; sourceTree = "<group>"; };
-		22DB73BE1640205C00924BEB /* reentrant.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = reentrant.cpp; sourceTree = "<group>"; };
-		22DB73C11640205C00924BEB /* sha.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sha.cpp; sourceTree = "<group>"; };
-		22DB73C41640205C00924BEB /* snmpmsg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = snmpmsg.cpp; sourceTree = "<group>"; };
-		22DB73C71640205C00924BEB /* target.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = target.cpp; sourceTree = "<group>"; };
-		22DB73CA1640205C00924BEB /* timetick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timetick.cpp; sourceTree = "<group>"; };
-		22DB73CD1640205C00924BEB /* usm_v3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = usm_v3.cpp; sourceTree = "<group>"; };
-		22DB73D01640205C00924BEB /* uxsnmp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uxsnmp.cpp; sourceTree = "<group>"; };
-		22DB73D31640205C00924BEB /* v3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = v3.cpp; sourceTree = "<group>"; };
-		22DB73D61640205C00924BEB /* vb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vb.cpp; sourceTree = "<group>"; };
 		22DB74311640208700924BEB /* XIS_SNMPDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XIS_SNMPDefinitions.h; sourceTree = "<group>"; };
 		22EB926B16406612000CFA4A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,11 +191,120 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ACF8BA92701C21200088D63 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				0ACF8BAA2701C21200088D63 /* Makefile.hpux11 */,
+				0ACF8BAB2701C21200088D63 /* msgqueue.cpp */,
+				0ACF8BAC2701C21200088D63 /* v3.cpp */,
+				0ACF8BAD2701C21200088D63 /* gauge.cpp */,
+				0ACF8BAE2701C21200088D63 /* oid.cpp */,
+				0ACF8BAF2701C21200088D63 /* md5c.cpp */,
+				0ACF8BB02701C21200088D63 /* Makefile.bcc */,
+				0ACF8BB12701C21200088D63 /* log.cpp */,
+				0ACF8BB22701C21200088D63 /* snmpmsg.cpp */,
+				0ACF8BB32701C21200088D63 /* idea.cpp */,
+				0ACF8BB42701C21200088D63 /* vb.cpp */,
+				0ACF8BB52701C21200088D63 /* common.mk */,
+				0ACF8BB62701C21200088D63 /* Makefile.linux */,
+				0ACF8BB72701C21200088D63 /* pdu.cpp */,
+				0ACF8BB82701C21200088D63 /* Makefile.solaris */,
+				0ACF8BB92701C21200088D63 /* notifyqueue.cpp */,
+				0ACF8BBA2701C21200088D63 /* usertimeout.cpp */,
+				0ACF8BBB2701C21200088D63 /* ctr64.cpp */,
+				0ACF8BBC2701C21200088D63 /* sha.cpp */,
+				0ACF8BBD2701C21200088D63 /* IPv6Utility.cpp */,
+				0ACF8BBE2701C21200088D63 /* Makefile.aix5 */,
+				0ACF8BBF2701C21200088D63 /* userdefined.cpp */,
+				0ACF8BC02701C21200088D63 /* eventlist.cpp */,
+				0ACF8BC12701C21200088D63 /* Makefile.am */,
+				0ACF8BC22701C21200088D63 /* counter.cpp */,
+				0ACF8BC32701C21200088D63 /* msec.cpp */,
+				0ACF8BC42701C21200088D63 /* Makefile.gcc_solaris */,
+				0ACF8BC52701C21200088D63 /* address.cpp */,
+				0ACF8BC62701C21200088D63 /* target.cpp */,
+				0ACF8BC72701C21200088D63 /* Makefile.dunix */,
+				0ACF8BC82701C21200088D63 /* timetick.cpp */,
+				0ACF8BC92701C21200088D63 /* octet.cpp */,
+				0ACF8BCA2701C21200088D63 /* auth_priv.cpp */,
+				0ACF8BCB2701C21200088D63 /* integer.cpp */,
+				0ACF8BCC2701C21200088D63 /* usm_v3.cpp */,
+				0ACF8BCD2701C21200088D63 /* reentrant.cpp */,
+				0ACF8BCE2701C21200088D63 /* asn1.cpp */,
+				0ACF8BCF2701C21200088D63 /* Makefile.in */,
+				0ACF8BD02701C21200088D63 /* eventlistholder.cpp */,
+				0ACF8BD12701C21200088D63 /* mp_v3.cpp */,
+				0ACF8BD22701C21200088D63 /* uxsnmp.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		0ACF8BF22701C21C00088D63 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0ACF8BF32701C21C00088D63 /* snmp_pp */,
+				0ACF8C1D2701C21C00088D63 /* Makefile.am */,
+				0ACF8C1E2701C21C00088D63 /* Makefile.in */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		0ACF8BF32701C21C00088D63 /* snmp_pp */ = {
+			isa = PBXGroup;
+			children = (
+				0ACF8BF42701C21C00088D63 /* oid.h */,
+				0ACF8BF52701C21C00088D63 /* usertimeout.h */,
+				0ACF8BF62701C21C00088D63 /* vb.h */,
+				0ACF8BF72701C21C00088D63 /* gauge.h */,
+				0ACF8BF82701C21C00088D63 /* config_snmp_pp.h.in */,
+				0ACF8BF92701C21C00088D63 /* notifyqueue.h */,
+				0ACF8BFA2701C21C00088D63 /* pdu.h */,
+				0ACF8BFB2701C21C00088D63 /* ctr64.h */,
+				0ACF8BFC2701C21C00088D63 /* counter.h */,
+				0ACF8BFD2701C21C00088D63 /* sha.h */,
+				0ACF8BFE2701C21C00088D63 /* asn1.h */,
+				0ACF8BFF2701C21C00088D63 /* IPv6Utility.h */,
+				0ACF8C002701C21C00088D63 /* md5.h */,
+				0ACF8C012701C21C00088D63 /* address.h */,
+				0ACF8C022701C21C00088D63 /* uxsnmp.h */,
+				0ACF8C032701C21C00088D63 /* smival.h */,
+				0ACF8C042701C21C00088D63 /* userdefined.h */,
+				0ACF8C052701C21C00088D63 /* timetick.h */,
+				0ACF8C062701C21C00088D63 /* config_snmp_pp.h */,
+				0ACF8C072701C21C00088D63 /* Makefile.am */,
+				0ACF8C082701C21C00088D63 /* reentrant.h */,
+				0ACF8C092701C21C00088D63 /* collect.h */,
+				0ACF8C0A2701C21C00088D63 /* smi.h */,
+				0ACF8C0B2701C21C00088D63 /* log.h */,
+				0ACF8C0C2701C21C00088D63 /* snmperrs.h */,
+				0ACF8C0D2701C21C00088D63 /* target.h */,
+				0ACF8C0E2701C21C00088D63 /* oid_def.h */,
+				0ACF8C0F2701C21C00088D63 /* octet.h */,
+				0ACF8C102701C21C00088D63 /* snmpmsg.h */,
+				0ACF8C112701C21C00088D63 /* snmp_pp.h */,
+				0ACF8C122701C21C00088D63 /* mp_v3.h */,
+				0ACF8C132701C21C00088D63 /* eventlist.h */,
+				0ACF8C142701C21C00088D63 /* auth_priv.h */,
+				0ACF8C152701C21C00088D63 /* usm_v3.h */,
+				0ACF8C162701C21C00088D63 /* integer.h */,
+				0ACF8C172701C21C00088D63 /* msec.h */,
+				0ACF8C182701C21C00088D63 /* Makefile.in */,
+				0ACF8C192701C21C00088D63 /* msgqueue.h */,
+				0ACF8C1A2701C21C00088D63 /* eventlistholder.h */,
+				0ACF8C1B2701C21C00088D63 /* v3.h */,
+				0ACF8C1C2701C21C00088D63 /* idea.h */,
+			);
+			path = snmp_pp;
+			sourceTree = "<group>";
+		};
 		22DB732D16401FE600924BEB = {
 			isa = PBXGroup;
 			children = (
 				22517C4E1758CE1E00961906 /* README.md */,
 				22EB926B16406612000CFA4A /* LICENSE */,
+				0ACF8C1F2701C35000088D63 /* libsnmp.h */,
+				0ACF8BF22701C21C00088D63 /* include */,
+				0ACF8BA92701C21200088D63 /* src */,
 				22DB733D16401FE600924BEB /* Mobile SNMP++ */,
 				22DB733A16401FE600924BEB /* Frameworks */,
 				22DB733916401FE600924BEB /* Products */,
@@ -215,8 +334,6 @@
 			isa = PBXGroup;
 			children = (
 				22DB74311640208700924BEB /* XIS_SNMPDefinitions.h */,
-				22DB734C1640205B00924BEB /* include */,
-				22DB73751640205B00924BEB /* src */,
 				22DB734A1640202D00924BEB /* XISMobile_SNMP_PP.mm */,
 				22DB73491640202D00924BEB /* XISMobile_SNMP_PP.h */,
 				22DB733E16401FE600924BEB /* Supporting Files */,
@@ -230,105 +347,6 @@
 				22DB733F16401FE600924BEB /* Mobile SNMP++-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		22DB734C1640205B00924BEB /* include */ = {
-			isa = PBXGroup;
-			children = (
-				22DB734D1640205B00924BEB /* snmp_pp */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		22DB734D1640205B00924BEB /* snmp_pp */ = {
-			isa = PBXGroup;
-			children = (
-				22DB734E1640205B00924BEB /* address.h */,
-				22DB734F1640205B00924BEB /* asn1.h */,
-				22DB73501640205B00924BEB /* auth_priv.h */,
-				22DB73511640205B00924BEB /* collect.h */,
-				22DB73521640205B00924BEB /* config_snmp_pp.h */,
-				22DB73531640205B00924BEB /* counter.h */,
-				22DB73541640205B00924BEB /* ctr64.h */,
-				22DB73551640205B00924BEB /* eventlist.h */,
-				22DB73561640205B00924BEB /* eventlistholder.h */,
-				22DB73571640205B00924BEB /* gauge.h */,
-				22DB73581640205B00924BEB /* idea.h */,
-				22DB73591640205B00924BEB /* integer.h */,
-				22DB735A1640205B00924BEB /* IPv6Utility.h */,
-				22DB735B1640205B00924BEB /* log.h */,
-				22DB735C1640205B00924BEB /* md5.h */,
-				22DB735D1640205B00924BEB /* mp_v3.h */,
-				22DB735E1640205B00924BEB /* msec.h */,
-				22DB735F1640205B00924BEB /* msgqueue.h */,
-				22DB73601640205B00924BEB /* notifyqueue.h */,
-				22DB73611640205B00924BEB /* octet.h */,
-				22DB73621640205B00924BEB /* oid.h */,
-				22DB73631640205B00924BEB /* oid_def.h */,
-				22DB73641640205B00924BEB /* pdu.h */,
-				22DB73651640205B00924BEB /* reentrant.h */,
-				22DB73661640205B00924BEB /* sha.h */,
-				22DB73671640205B00924BEB /* smi.h */,
-				22DB73681640205B00924BEB /* smival.h */,
-				22DB73691640205B00924BEB /* snmp_pp.h */,
-				22DB736A1640205B00924BEB /* snmperrs.h */,
-				22DB736B1640205B00924BEB /* snmpmsg.h */,
-				22DB736C1640205B00924BEB /* target.h */,
-				22DB736D1640205B00924BEB /* timetick.h */,
-				22DB736E1640205B00924BEB /* usm_v3.h */,
-				22DB736F1640205B00924BEB /* uxsnmp.h */,
-				22DB73701640205B00924BEB /* v3.h */,
-				22DB73711640205B00924BEB /* vb.h */,
-			);
-			path = snmp_pp;
-			sourceTree = "<group>";
-		};
-		22DB73751640205B00924BEB /* src */ = {
-			isa = PBXGroup;
-			children = (
-				22DB73761640205B00924BEB /* address.cpp */,
-				22DB73791640205C00924BEB /* asn1.cpp */,
-				22DB737C1640205C00924BEB /* auth_priv.cpp */,
-				22DB737F1640205C00924BEB /* common.mk */,
-				22DB73801640205C00924BEB /* counter.cpp */,
-				22DB73831640205C00924BEB /* ctr64.cpp */,
-				22DB73861640205C00924BEB /* eventlist.cpp */,
-				22DB73891640205C00924BEB /* eventlistholder.cpp */,
-				22DB738C1640205C00924BEB /* gauge.cpp */,
-				22DB738F1640205C00924BEB /* idea.cpp */,
-				22DB73921640205C00924BEB /* integer.cpp */,
-				22DB73951640205C00924BEB /* IPv6Utility.cpp */,
-				22DB73981640205C00924BEB /* log.cpp */,
-				22DB739B1640205C00924BEB /* Makefile.aix5 */,
-				22DB739C1640205C00924BEB /* Makefile.bcc */,
-				22DB739D1640205C00924BEB /* Makefile.dunix */,
-				22DB739E1640205C00924BEB /* Makefile.gcc_solaris */,
-				22DB739F1640205C00924BEB /* Makefile.hpux11 */,
-				22DB73A01640205C00924BEB /* Makefile.iOS_armv6 */,
-				22DB73A11640205C00924BEB /* Makefile.iOS_armv7 */,
-				22DB73A21640205C00924BEB /* Makefile.iOS_Sim */,
-				22DB73A31640205C00924BEB /* Makefile.linux */,
-				22DB73A41640205C00924BEB /* Makefile.OSX */,
-				22DB73A51640205C00924BEB /* Makefile.solaris */,
-				22DB73A61640205C00924BEB /* md5c.cpp */,
-				22DB73A91640205C00924BEB /* mp_v3.cpp */,
-				22DB73AC1640205C00924BEB /* msec.cpp */,
-				22DB73AF1640205C00924BEB /* msgqueue.cpp */,
-				22DB73B21640205C00924BEB /* notifyqueue.cpp */,
-				22DB73B51640205C00924BEB /* octet.cpp */,
-				22DB73B81640205C00924BEB /* oid.cpp */,
-				22DB73BB1640205C00924BEB /* pdu.cpp */,
-				22DB73BE1640205C00924BEB /* reentrant.cpp */,
-				22DB73C11640205C00924BEB /* sha.cpp */,
-				22DB73C41640205C00924BEB /* snmpmsg.cpp */,
-				22DB73C71640205C00924BEB /* target.cpp */,
-				22DB73CA1640205C00924BEB /* timetick.cpp */,
-				22DB73CD1640205C00924BEB /* usm_v3.cpp */,
-				22DB73D01640205C00924BEB /* uxsnmp.cpp */,
-				22DB73D31640205C00924BEB /* v3.cpp */,
-				22DB73D61640205C00924BEB /* vb.cpp */,
-			);
-			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,6 +401,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 22DB732D16401FE600924BEB;
@@ -419,36 +438,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ACF8BE02701C21200088D63 /* sha.cpp in Sources */,
+				0ACF8BE92701C21200088D63 /* octet.cpp in Sources */,
+				0ACF8BF02701C21200088D63 /* mp_v3.cpp in Sources */,
 				22DB734B1640202D00924BEB /* XISMobile_SNMP_PP.mm in Sources */,
-				22DB73DA1640205C00924BEB /* address.cpp in Sources */,
-				22DB73DD1640205C00924BEB /* asn1.cpp in Sources */,
-				22DB73E01640205C00924BEB /* auth_priv.cpp in Sources */,
-				22DB73E31640205C00924BEB /* counter.cpp in Sources */,
-				22DB73E61640205C00924BEB /* ctr64.cpp in Sources */,
-				22DB73E91640205C00924BEB /* eventlist.cpp in Sources */,
-				22DB73EC1640205C00924BEB /* eventlistholder.cpp in Sources */,
-				22DB73EF1640205C00924BEB /* gauge.cpp in Sources */,
-				22DB73F21640205C00924BEB /* idea.cpp in Sources */,
-				22DB73F51640205C00924BEB /* integer.cpp in Sources */,
-				22DB73F81640205C00924BEB /* IPv6Utility.cpp in Sources */,
-				22DB73FB1640205C00924BEB /* log.cpp in Sources */,
-				22DB73FE1640205C00924BEB /* md5c.cpp in Sources */,
-				22DB74011640205C00924BEB /* mp_v3.cpp in Sources */,
-				22DB74041640205C00924BEB /* msec.cpp in Sources */,
-				22DB74071640205C00924BEB /* msgqueue.cpp in Sources */,
-				22DB740A1640205C00924BEB /* notifyqueue.cpp in Sources */,
-				22DB740D1640205C00924BEB /* octet.cpp in Sources */,
-				22DB74101640205C00924BEB /* oid.cpp in Sources */,
-				22DB74131640205C00924BEB /* pdu.cpp in Sources */,
-				22DB74161640205C00924BEB /* reentrant.cpp in Sources */,
-				22DB74191640205C00924BEB /* sha.cpp in Sources */,
-				22DB741C1640205C00924BEB /* snmpmsg.cpp in Sources */,
-				22DB741F1640205C00924BEB /* target.cpp in Sources */,
-				22DB74221640205C00924BEB /* timetick.cpp in Sources */,
-				22DB74251640205C00924BEB /* usm_v3.cpp in Sources */,
-				22DB74281640205C00924BEB /* uxsnmp.cpp in Sources */,
-				22DB742B1640205C00924BEB /* v3.cpp in Sources */,
-				22DB742E1640205C00924BEB /* vb.cpp in Sources */,
+				0ACF8BDF2701C21200088D63 /* ctr64.cpp in Sources */,
+				0ACF8BD92701C21200088D63 /* snmpmsg.cpp in Sources */,
+				0ACF8BF12701C21200088D63 /* uxsnmp.cpp in Sources */,
+				0ACF8BDD2701C21200088D63 /* notifyqueue.cpp in Sources */,
+				0ACF8BEA2701C21200088D63 /* auth_priv.cpp in Sources */,
+				0ACF8BE22701C21200088D63 /* userdefined.cpp in Sources */,
+				0ACF8BDA2701C21200088D63 /* idea.cpp in Sources */,
+				0ACF8BED2701C21200088D63 /* reentrant.cpp in Sources */,
+				0ACF8BD62701C21200088D63 /* oid.cpp in Sources */,
+				0ACF8BE72701C21200088D63 /* target.cpp in Sources */,
+				0ACF8BE32701C21200088D63 /* eventlist.cpp in Sources */,
+				0ACF8BDC2701C21200088D63 /* pdu.cpp in Sources */,
+				0ACF8BE42701C21200088D63 /* counter.cpp in Sources */,
+				0ACF8BEB2701C21200088D63 /* integer.cpp in Sources */,
+				0ACF8BEC2701C21200088D63 /* usm_v3.cpp in Sources */,
+				0ACF8BD82701C21200088D63 /* log.cpp in Sources */,
+				0ACF8BEF2701C21200088D63 /* eventlistholder.cpp in Sources */,
+				0ACF8BE12701C21200088D63 /* IPv6Utility.cpp in Sources */,
+				0ACF8BE52701C21200088D63 /* msec.cpp in Sources */,
+				0ACF8BDB2701C21200088D63 /* vb.cpp in Sources */,
+				0ACF8BDE2701C21200088D63 /* usertimeout.cpp in Sources */,
+				0ACF8BD72701C21200088D63 /* md5c.cpp in Sources */,
+				0ACF8BD32701C21200088D63 /* msgqueue.cpp in Sources */,
+				0ACF8BD42701C21200088D63 /* v3.cpp in Sources */,
+				0ACF8BE82701C21200088D63 /* timetick.cpp in Sources */,
+				0ACF8BE62701C21200088D63 /* address.cpp in Sources */,
+				0ACF8BD52701C21200088D63 /* gauge.cpp in Sources */,
+				0ACF8BEE2701C21200088D63 /* asn1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,7 +543,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "./**";
 			};
@@ -544,7 +565,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "./**";
 				VALIDATE_PRODUCT = YES;
