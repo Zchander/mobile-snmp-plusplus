@@ -171,7 +171,7 @@
  @param aPort The UDP port used for the SNMP agent(s), defaults to 161
  @param community The readonly community string to identify yourself to the agent(s)
  @param retries The number of retries before returning the results. Maximum value is 100
- @param timeout The timeout in msec. Valid values are between 100 and 500 msec
+ @param timeout The timeout in 10 msec. Valid values are between 100 and 500, so 100 would be 1 sec
  @param error Is an autoreleased NSError
  @return Returns an array containing the IP addresses of discovered SNMP agents
  
@@ -198,7 +198,7 @@
  @param aPort The UDP port used for the SNMP agent(s), defaults to 161
  @param community The readonly community string to identify yourself to the agent(s)
  @param retries The number of retries before returning the results. Maximum value is 100
- @param timeout The timeout in msec. Valid values are between 100 and 500 msec
+ @param timeout The timeout in 10 msec. Valid values are between 100 and 500, so 100 would be 1 sec
  @param error Is an autoreleased NSError
  @return Returns a NSDictionary containing the OID and the corresponding value as NSString
  
@@ -226,7 +226,7 @@
  @param aPort The UDP port used for the SNMP agent(s), defaults to 161
  @param community The readonly community string to identify yourself to the agent(s)
  @param retries The number of retries before returning the results. Maximum value is 100
- @param timeout The timeout in msec. Valid values are between 100 and 500 msec
+ @param timeout The timeout in 10 msec. Valid values are between 100 and 500, so 100 would be 1 sec
  @param subTree A boolean which indicates wether you wish to walk only the subtree, or the whole tree. `YES` means you wish to walk only the subtree. `NO` means you want to read the whole SNMP tree.
  @param error Is an autoreleased NSError
  @return Returns a NSDictionary containing the OIDs and the corresponding values as NSString
